@@ -1,0 +1,37 @@
+{
+  "schema": "metatron.carve.public-gemini-review.v1",
+  "dateUTC": "2026-10-07",
+  "publicMeasurementSummary": "CARVE_WAVE_ONSET_2026-10-07.json",
+  "publicMeasurementSummarySHA256": "6a9e68975393f2c828e77af32143c2ef8e20b6d4ff97c2ef2699d7f877fd9a89",
+  "route": "One supervised Gemini browser exchange using the supplied public diagnostic table",
+  "uiReportedModel": "Flash-Lite",
+  "independentlyAuthenticatedModelVersion": false,
+  "independentExecution": false,
+  "independentProviderAuthentication": false,
+  "promptFidelityVerified": true,
+  "reply": {
+    "scope": "CARVE CPU diagnostic summary review",
+    "validatedPhysics": false,
+    "exactThresholdMeasured": false,
+    "independentSamples": false,
+    "reportingBracketMps": [
+      0.664,
+      0.665
+    ],
+    "caveat": "Raw unrounded fields were not measured and wave clocks were zeroed, rendering physical accuracy unverified."
+  },
+  "privateExactReplySHA256": "d45f0c9d05e9330d662762dea32831dff20d6b28644b7dc75d4a5ecc0d8ffcc8",
+  "privateObservationSHA256": "a4e3c2862175f9105c06f8beb641e66404f4fa932690ffddb1d3979c058fe651",
+  "limits": "This is advice on supplied context. Gemini did not independently run the experiments or validate physics. The UI captures and context-copy evidence remain private.",
+  "newCpuJobs": 0,
+  "humanApprovalsAdded": 0,
+  "publisherControl": "UNVERIFIED",
+  "humanApprovals": "0/3",
+  "bounty": "CLOSED",
+  "chainOperations": 0,
+  "signingOperations": 0,
+  "gateOpeningAuthorized": false,
+  "automaticModelConnector": false,
+  "continuousAutopilotRunning": false,
+  "hostedRuntimeRunning": false
+}

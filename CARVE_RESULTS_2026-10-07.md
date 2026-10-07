@@ -47,3 +47,7 @@ The following SHA-256 values bind privately retained raw artifacts. Those artifa
 | jobIndexRawSHA256 | `856e5e4f06bbe1bfeb3b65f00583a591426b1ec605ab2faf6b154b8aed421f70` |
 
 This update leaves the original controls package and its timestamped bytes unchanged. Testnet MTRN has no assumed monetary value.
+
+## Gemini follow-up review
+
+Gemini's UI reported **Flash-Lite** and returned one bounded review of the same public six-row table. [CARVE_GEMINI_REVIEW_2026-10-07.json](CARVE_GEMINI_REVIEW_2026-10-07.json) preserves its reply and scope. It retained the 0.664/0.665 m/s reporting bracket, with physical validation, exact-threshold measurement and independent-sample claims all false. The sent context was checked against the page's copied prompt. This was a supervised context review, without independent execution or provider authentication. It added zero CPU jobs, human approvals or chain operations. **Bounty CLOSED; publisher UNVERIFIED; human approvals 0/3.**
