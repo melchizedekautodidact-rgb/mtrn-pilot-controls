@@ -55,3 +55,11 @@ Publish this hash (or the whole package) on a public, timestamped channel before
 2. For each accepted leaf: assemble bundle → hash → publish hash → wait for timestamp → then include in root.
 3. Multi-party sign-off before every root.
 4. Halt on any trigger in `03_Stop_Conditions.md`.
+
+## Gate workfiles (this repo)
+
+| Gate | File |
+|------|------|
+| Multi-party publisher | `PUBLISHER_KEY_MULTISIG.md` |
+| Epoch 0 absolute caps | `EPOCH_0_CAPS.md` |
+| Bounty text (still closed) | `BOUNTY_ANNOUNCEMENT_DRAFT.md` |

@@ -10,6 +10,9 @@ This directory contains every operational recommendation from the independent re
 | `03_Stop_Conditions.md` | Automatic abort triggers |
 | `04_Reviewer_Declaration_Template.md` | Form each independent reviewer must sign |
 | `05_Public_Tally_Template.md` | Live balance / commitment tracker |
+| `PUBLISHER_KEY_MULTISIG.md` | Multi-party publisher confirmation checklist |
+| `EPOCH_0_CAPS.md` | Absolute Epoch 0 budget / beneficiary caps |
+| `BOUNTY_ANNOUNCEMENT_DRAFT.md` | Public bounty text (**NOT OPEN**) |
 
 **Next actions for the pilot team (human only):**
 1. ~~Hash the master Controls Package~~ — done. SHA-256: `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051` (see `EPOCH_0_PREFLIGHT.md`). **Still needed:** publish that hash on a public timestamped channel.
