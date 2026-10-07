@@ -28,7 +28,7 @@ Details: `CHAIN_SNAPSHOT_2026-10-07.md`.
 - [ ] Geographic / org diversity among signers
 - [ ] Hardware wallets or equivalent for signing material
 - [ ] Documented rotation / replacement process for a lost signer
-- [ ] Dry-run: produce a dummy multi-party approval without publishing a real root
+- [ ] Dry-run: produce a dummy multi-party approval without publishing a real root — see `PUBLISHER_DRY_RUN.md`
 
 ## Verification procedure
 
