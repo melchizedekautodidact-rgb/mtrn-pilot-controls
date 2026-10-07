@@ -37,3 +37,11 @@ ots verify MTRN_Pilot_Controls_Package.md.ots
 **Initial commit:** `b5e7bff`  
 **Canonical hash file:** `https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls/blob/main/MTRN_Pilot_Controls_Package.sha256`  
 **OTS proof:** `https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls/blob/main/MTRN_Pilot_Controls_Package.md.ots`
+
+## OTS upgrade attempt (2026-10-07T08:30:20Z)
+
+**ots CLI:** not installed in this environment (`ots` / `opentimestamps-client` unavailable). No `ots upgrade` run on `MTRN_Pilot_Controls_Package.md.ots` or companion `stamp_*.ots`.
+
+**Status of proofs:** remain **pending** Bitcoin aggregation (calendar receipts only). Not Bitcoin-anchored in this pass. Re-run `ots upgrade` when the CLI is available and calendars have confirmed.
+
+**timestamps.org recheck (same UTC):** `getent hosts timestamps.org` / `ots.timestamps.org` returned no A/AAAA; `curl` to `https://timestamps.org` and `http://timestamps.org` produced no usable response (host still unreachable). Routine note: leave timestamps.org optional; OTS calendars remain the public timestamp channel.

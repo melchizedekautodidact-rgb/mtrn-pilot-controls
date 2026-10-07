@@ -2,6 +2,8 @@
 
 **Single status board** of remaining **human** gates before replacing the bounty draft with an OPEN notice.
 
+**Master go/no-go before OPEN:** `OPEN_GATE_CHECKLIST.md` (do not mark OPEN while pool=0 or multisig UNVERIFIED).
+
 **Current snapshot facts (2026-10-07):**
 
 | Fact | Value |
@@ -40,6 +42,7 @@ Testnet MTRN has **no assumed monetary value**. Documentation only — no on-cha
 
 ## Related
 
+- OPEN gate checklist: `OPEN_GATE_CHECKLIST.md`
 - Preflight detail: `EPOCH_0_PREFLIGHT.md`
 - Dry-run pack: `PUBLISHER_DRY_RUN.md`
 - Funding: `CLAIM_POOL_FUNDING_CHECKLIST.md`

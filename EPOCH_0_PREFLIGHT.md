@@ -26,7 +26,7 @@ Publish this hash (or the whole package) on a public, timestamped channel before
 
 ## Human gates (must all pass before opening the 33-datapoint bounty)
 
-Single board: `OPS_READINESS.md`. Do not check multisig or caps until humans complete those procedures.
+Single board: `OPS_READINESS.md`. Master go/no-go before replacing the bounty draft with OPEN: `OPEN_GATE_CHECKLIST.md` (do not mark OPEN while pool=0 or multisig UNVERIFIED). Do not check multisig or caps until humans complete those procedures.
 
 - [x] Controls Package hash submitted to public OpenTimestamps calendars
 - [x] Controls Package published on public GitHub: https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls (commit `b5e7bff`) (2026-10-07T07:05:15Z). See `TIMESTAMP_RECORD.md` and `MTRN_Pilot_Controls_Package.md.ots`. Note: timestamps.org DNS currently refuses queries; OTS calendars remain the public timestamp channel.
@@ -70,6 +70,7 @@ Single board: `OPS_READINESS.md`. Do not check multisig or caps until humans com
 | Epoch 0 absolute caps | `EPOCH_0_CAPS.md` |
 | Publisher dry-run (NO ROOT) | `PUBLISHER_DRY_RUN.md` |
 | Ops readiness board | `OPS_READINESS.md` |
+| OPEN gate checklist | `OPEN_GATE_CHECKLIST.md` |
 | Public tally (live seed) | `PUBLIC_TALLY.md` |
 | Bounty text (still closed) | `BOUNTY_ANNOUNCEMENT_DRAFT.md` |
 | Sepolia snapshot | `CHAIN_SNAPSHOT_2026-10-07.md` |

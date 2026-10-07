@@ -19,6 +19,7 @@ This directory contains every operational recommendation from the independent re
 | `EPOCH_0_PREFLIGHT.md` | Gate checklist before opening the bounty |
 | `PUBLISHER_DRY_RUN.md` | Dry-run: dummy multi-party approval + dummy digest (**NO ROOT**) |
 | `OPS_READINESS.md` | Single status board of remaining human gates before OPEN |
+| `OPEN_GATE_CHECKLIST.md` | Master go/no-go before replacing bounty draft with OPEN |
 
 **Next actions for the pilot team (human only):**
 
@@ -27,6 +28,6 @@ This directory contains every operational recommendation from the independent re
 3. **(b)** Verify and fill multi-party publisher control per `PUBLISHER_KEY_MULTISIG.md` (status remains UNVERIFIED until humans complete it).
 4. **(c)** Republish absolute caps in `EPOCH_0_CAPS.md` from the non-zero claim-pool balance (budget ≤ 5% of pool; beneficiary ≤ 15% of budget).
 5. **(d)** Complete publisher dry-run per `PUBLISHER_DRY_RUN.md` (dummy multi-party approval of a dummy digest; **NO ROOT** / never call `publishEpoch`) **before** opening.
-6. **(e)** Track remaining gates on `OPS_READINESS.md`. Only then open the bounty for the 33 datapoints (`BOUNTY_ANNOUNCEMENT_DRAFT.md` stays **NOT OPEN** until then).
+6. **(e)** Track remaining gates on `OPS_READINESS.md` and clear every required box on `OPEN_GATE_CHECKLIST.md` (do not mark OPEN while pool=0 or multisig UNVERIFIED). Only then open the bounty for the 33 datapoints (`BOUNTY_ANNOUNCEMENT_DRAFT.md` stays **NOT OPEN** until then).
 
 No on-chain actions, code changes, or token movements are performed or recommended by this package. Testnet MTRN has no assumed monetary value.
