@@ -51,3 +51,9 @@ Optional (non-blocking): timestamps.org when DNS works; Finney OTS upgrade when 
 - Any wallet tx from this documentation pack
 
 Testnet MTRN has **no assumed monetary value**.
+
+## CARVE diagnostics update — 2026-10-07
+
+[CARVE_RESULTS_2026-10-07.md](CARVE_RESULTS_2026-10-07.md) records six bounded CPU jobs: 24 cases, 720 steps, 156 passing interface checks, plus 636 separate artifact/source checks. The rounded wave reporting change is bracketed by requested 0.664/0.665 m/s. Grok and Flipper reviewed supplied measurements; neither independently ran or authenticated them. Rendering and physical accuracy remain unverified.
+
+**Bounty remains CLOSED; publisher control remains UNVERIFIED; recorded human approvals remain 0/3.** This batch did not re-read on-chain funding, change caps, add human approvals, run a publisher dry-run, or clear any OPEN gate. The existing chain snapshots above remain historical evidence at their recorded blocks. Follow the funding, real 2-of-3/MPC, dry-run and OPEN checklist sequence before any opening.
