@@ -1,0 +1,178 @@
+{
+  "schema": "metatron.carve.public-rounded-onset-summary.v1",
+  "dateUTC": "2026-10-07",
+  "origin": "Local broker fixed CPU jobs informed by supervised model reviews",
+  "completedAtUTC": "2026-10-07T13:51:07.381Z",
+  "status": "PASS_ROUNDED_REPORTING_DIAGNOSTICS_CPU_ONLY",
+  "counts": {
+    "cpuJobs": 6,
+    "cases": 24,
+    "steps": 720,
+    "frozenInterfaceChecksPassed": 156,
+    "separateArtifactSourceChecksPassed": 636,
+    "failures": 0
+  },
+  "protocol": {
+    "weather": "clear",
+    "zeroWindControl": true,
+    "treatmentWindsMps": [
+      0.599,
+      0.6,
+      0.601,
+      0.664,
+      0.665,
+      0.67
+    ],
+    "stepsPerCase": 30,
+    "repetitionsPerJob": 2,
+    "casesPerJob": 4,
+    "fixedCalendarMilliseconds": 1791392400000,
+    "baselineAndClocksMatched": true,
+    "renderedWaveClockSeconds": 0
+  },
+  "measurements": [
+    {
+      "requestedMeanWindMps": 0.599,
+      "repetitionsAgree": true,
+      "roundedMeanWindMps": 0.6,
+      "roundedInstantaneousWindMps": 0.8,
+      "roundedWaveParameterMetres": 0,
+      "rainMmPerHour": 0,
+      "bodySeconds": 0.5000000000000007,
+      "gustSeconds": 0.5000000000000007
+    },
+    {
+      "requestedMeanWindMps": 0.6,
+      "repetitionsAgree": true,
+      "roundedMeanWindMps": 0.6,
+      "roundedInstantaneousWindMps": 0.81,
+      "roundedWaveParameterMetres": 0,
+      "rainMmPerHour": 0,
+      "bodySeconds": 0.5000000000000007,
+      "gustSeconds": 0.5000000000000007
+    },
+    {
+      "requestedMeanWindMps": 0.601,
+      "repetitionsAgree": true,
+      "roundedMeanWindMps": 0.6,
+      "roundedInstantaneousWindMps": 0.81,
+      "roundedWaveParameterMetres": 0,
+      "rainMmPerHour": 0,
+      "bodySeconds": 0.5000000000000007,
+      "gustSeconds": 0.5000000000000007
+    },
+    {
+      "requestedMeanWindMps": 0.664,
+      "repetitionsAgree": true,
+      "roundedMeanWindMps": 0.66,
+      "roundedInstantaneousWindMps": 0.89,
+      "roundedWaveParameterMetres": 0,
+      "rainMmPerHour": 0,
+      "bodySeconds": 0.5000000000000007,
+      "gustSeconds": 0.5000000000000007
+    },
+    {
+      "requestedMeanWindMps": 0.665,
+      "repetitionsAgree": true,
+      "roundedMeanWindMps": 0.67,
+      "roundedInstantaneousWindMps": 0.89,
+      "roundedWaveParameterMetres": 0.0001,
+      "rainMmPerHour": 0,
+      "bodySeconds": 0.5000000000000007,
+      "gustSeconds": 0.5000000000000007
+    },
+    {
+      "requestedMeanWindMps": 0.67,
+      "repetitionsAgree": true,
+      "roundedMeanWindMps": 0.67,
+      "roundedInstantaneousWindMps": 0.9,
+      "roundedWaveParameterMetres": 0.0001,
+      "rainMmPerHour": 0,
+      "bodySeconds": 0.5000000000000007,
+      "gustSeconds": 0.5000000000000007
+    }
+  ],
+  "roundedReportingChangeBracketMps": [
+    0.664,
+    0.665
+  ],
+  "limits": {
+    "rawMeanWindMeasured": false,
+    "rawWaveMeasured": false,
+    "exactThresholdMeasured": false,
+    "physicalValidation": false,
+    "renderedWavesVerified": false,
+    "independentStatisticalSamples": false,
+    "fullStateDeterminismVerified": false,
+    "originalSourceChanged": false,
+    "frozenRunnerChanged": false,
+    "compactFlipperImport": false,
+    "scientificAcceptance": false
+  },
+  "reviews": {
+    "grok": {
+      "route": "Supervised browser exchange; source context review only",
+      "uiReportedModel": null,
+      "browserRequests": 1,
+      "formattingCorrectionRequests": 0,
+      "independentExecution": false,
+      "independentProviderAuthentication": false,
+      "reply": {
+        "scope": "Hs reporting onset vs mean-wind requests; gate vs rounding aliases",
+        "validatedPhysics": false,
+        "exactThresholdMeasured": false,
+        "independentSamples": false,
+        "reportingBracketMps": [
+          0.664,
+          0.665
+        ]
+      },
+      "privateRawReplySHA256": "c9a8e5e31ba18726d545d9c6b27dd1f787479b1a50926e0311da9685dd87f925"
+    },
+    "flipper": {
+      "route": "Supervised browser exchange; source context review only",
+      "uiReportedModel": "haiku 4.5",
+      "browserRequests": 2,
+      "formattingCorrectionRequests": 1,
+      "independentExecution": false,
+      "independentProviderAuthentication": false,
+      "reply": {
+        "scope": "Six jobs, 156 checks, 720 steps. Wave parameter 0 until mean 0.665 m/s request, then 0.0001 m. Rounded reporting change bracketed 0.664–0.665. Fixed noise, matched controls, zero rain. Exact threshold unmeasured.",
+        "validatedPhysics": false,
+        "exactThresholdMeasured": false,
+        "independentSamples": false,
+        "reportingBracketMps": [
+          0.664,
+          0.665
+        ]
+      },
+      "privateRawReplySHA256": "f52fa5491208c2cbe9e81ff27f8bf2b2467e0c58a5120d7b08ecfdb5cf79553b"
+    }
+  },
+  "runtime": {
+    "localBoundedCpuJobsCompleted": true,
+    "automaticModelConnector": false,
+    "continuousAutopilotRunning": false,
+    "hostedRuntimeRunning": false
+  },
+  "governance": {
+    "bounty": "CLOSED",
+    "publisherControl": "UNVERIFIED",
+    "humanApprovalsRecorded": "0/3",
+    "approvalsAddedByThisBatch": 0,
+    "signingOperations": 0,
+    "chainOperations": 0,
+    "liveFundingRecheckedByThisBatch": false,
+    "fundingEvidenceAddedByThisBatch": false,
+    "gateOpeningAuthorized": false
+  },
+  "privateArtifactBindings": {
+    "frozenSourceSHA256": "a3113cb416b225bb267bf9a95f5e69bd603ae996651c500183cccbf8044c04c4",
+    "predeclaredPlanRawSHA256": "e21b17b5b6c636831b8e7d27c8e8589cf2536817c0d802b5d628be6e01f7dfcd",
+    "validationRawSHA256": "2b135b3544c662b978731afaed89933445182d209c6732d5c9c75d4d2388d906",
+    "completionRawSHA256": "24ace8378b96e2529151857a3e4cb791f5dee9eecc7404bd63f96111c2326483",
+    "safeFeedbackRawSHA256": "4e109cce4033f6cf0341ad128fada7508b2af77c683883d53ae223db50eddd64",
+    "jobIndexRawSHA256": "856e5e4f06bbe1bfeb3b65f00583a591426b1ec605ab2faf6b154b8aed421f70"
+  },
+  "publicEvidenceLimit": "This file is a curated public summary. Its bindings identify privately retained raw artifacts; the source, raw runs and UI captures are not published here. Hashes alone do not allow independent reproduction or authenticate a provider."
+}

@@ -4,6 +4,8 @@ This directory contains every operational recommendation from the independent re
 
 | File | Purpose |
 |------|---------|
+| [CARVE_RESULTS_2026-10-07.md](CARVE_RESULTS_2026-10-07.md) | CARVE CPU diagnostics: six jobs, rounded wave reporting bracket; no OPEN gate change |
+| [CARVE_WAVE_ONSET_2026-10-07.json](CARVE_WAVE_ONSET_2026-10-07.json) | Curated measurements, review replies, scope limits and private artifact hashes |
 | `STATUS.md` | **Gate freeze** — done vs human-only before OPEN; bounty CLOSED |
 | `MTRN_Pilot_Controls_Package.md` | Master document (v1.0) – publish or hash this first |
 | `01_Acceptance_Checklist.md` | Exact checklist for the 33 cohesive-energy datapoints |
