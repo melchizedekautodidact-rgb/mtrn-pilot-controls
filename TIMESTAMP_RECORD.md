@@ -28,3 +28,12 @@ sha256sum MTRN_Pilot_Controls_Package.md
 # expect: fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051
 ots verify MTRN_Pilot_Controls_Package.md.ots
 ```
+
+
+## GitHub public publication
+
+**Published (UTC):** 2026-10-07T07:17:41Z  
+**Repo (public):** https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls  
+**Initial commit:** `b5e7bff`  
+**Canonical hash file:** `https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls/blob/main/MTRN_Pilot_Controls_Package.sha256`  
+**OTS proof:** `https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls/blob/main/MTRN_Pilot_Controls_Package.md.ots`

@@ -26,7 +26,8 @@ Publish this hash (or the whole package) on a public, timestamped channel before
 
 ## Human gates (must all pass before opening the 33-datapoint bounty)
 
-- [x] Controls Package hash submitted to public OpenTimestamps calendars (2026-10-07T07:05:15Z). See `TIMESTAMP_RECORD.md` and `MTRN_Pilot_Controls_Package.md.ots`. Note: timestamps.org DNS currently refuses queries; OTS calendars used as the public timestamp channel.
+- [x] Controls Package hash submitted to public OpenTimestamps calendars
+- [x] Controls Package published on public GitHub: https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls (commit `b5e7bff`) (2026-10-07T07:05:15Z). See `TIMESTAMP_RECORD.md` and `MTRN_Pilot_Controls_Package.md.ots`. Note: timestamps.org DNS currently refuses queries; OTS calendars used as the public timestamp channel.
 - [ ] Publisher key is multi-party (min 2-of-3). Single-key = stop
 - [ ] Epoch 0 budget published (recommended ≤ 5% of pre-funded balance): ________ MTRN
 - [ ] Single-beneficiary cap published (recommended ≤ 15% of epoch budget): ________ MTRN
