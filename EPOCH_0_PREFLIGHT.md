@@ -1,0 +1,56 @@
+# Epoch 0 Preflight
+
+**Status:** Controls package hashed. Bounty must stay closed until gates below are green.
+
+## Package integrity
+
+| Item | Value |
+|------|-------|
+| File | `MTRN_Pilot_Controls_Package.md` |
+| Size | 7136 bytes |
+| SHA-256 | `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051` |
+| Scope | Testnet-only (Sepolia). No assumed monetary value for MTRN. |
+
+Publish this hash (or the whole package) on a public, timestamped channel before any Epoch 0 work or root publication.
+
+### Companion file digests (informational)
+
+| File | SHA-256 |
+|------|---------|
+| `01_Acceptance_Checklist.md` | `6c0911fd722bb3dffe7f091960e5dc0634656b13642317ec2c8ece1b6b936172` |
+| `02_Publisher_Procedure.md` | `efb989bd7cc4c6fb9e9cd6b3942e4734af66d4da1a641b9a01ed4dca934e1698` |
+| `03_Stop_Conditions.md` | `3fc29ecb782a2562d8d000a7b2ac13ca920df595af2adfc24caebcae2a35e1d7` |
+| `04_Reviewer_Declaration_Template.md` | `2704460a0eaa6347cdd16ca75d4fcb4a6ba44b827163e74346b672b80cc7019a` |
+| `05_Public_Tally_Template.md` | `06797ece7b6743b341394b4887cc09c3c09328857027a05e29057e6a94fd9553` |
+| `README.md` | `6cd91033ddf903a44fa619381629f4aab266bf7ba4a1068c2b5ec4825d211df6` |
+
+## Human gates (must all pass before opening the 33-datapoint bounty)
+
+- [x] Controls Package hash submitted to public OpenTimestamps calendars (2026-10-07T07:05:15Z). See `TIMESTAMP_RECORD.md` and `MTRN_Pilot_Controls_Package.md.ots`. Note: timestamps.org DNS currently refuses queries; OTS calendars used as the public timestamp channel.
+- [ ] Publisher key is multi-party (min 2-of-3). Single-key = stop
+- [ ] Epoch 0 budget published (recommended ≤ 5% of pre-funded balance): ________ MTRN
+- [ ] Single-beneficiary cap published (recommended ≤ 15% of epoch budget): ________ MTRN
+- [ ] Acceptance checklist published publicly
+- [ ] Public tally page/file ready (see `05_Public_Tally_Template.md`)
+
+## Suggested Epoch 0 numbers (fill absolute values once balance is known)
+
+| Control | Rule | Absolute (fill in) |
+|---------|------|--------------------|
+| Pre-funded balance | Known on-chain / treasury | _____ MTRN |
+| Epoch 0 budget | ≤ 5% of pre-funded | _____ MTRN |
+| Single beneficiary | ≤ 15% of epoch budget | _____ MTRN |
+| Max leaves | Exactly 33 | 33 |
+
+## Still forbidden until gates pass
+
+- Publishing any Merkle root
+- Opening claims
+- Advertising the bounty as paid work with real-world value
+
+## Next after gates
+
+1. Open bounty under the published checklist.
+2. For each accepted leaf: assemble bundle → hash → publish hash → wait for timestamp → then include in root.
+3. Multi-party sign-off before every root.
+4. Halt on any trigger in `03_Stop_Conditions.md`.
