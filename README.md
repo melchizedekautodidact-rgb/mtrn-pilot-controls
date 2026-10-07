@@ -4,6 +4,7 @@ This directory contains every operational recommendation from the independent re
 
 | File | Purpose |
 |------|---------|
+| `STATUS.md` | **Gate freeze** — done vs human-only before OPEN; bounty CLOSED |
 | `MTRN_Pilot_Controls_Package.md` | Master document (v1.0) – publish or hash this first |
 | `01_Acceptance_Checklist.md` | Exact checklist for the 33 cohesive-energy datapoints |
 | `02_Publisher_Procedure.md` | Step-by-step publisher process including public hashing |
@@ -21,6 +22,8 @@ This directory contains every operational recommendation from the independent re
 | `PUBLISHER_DRY_RUN.md` | Dry-run: dummy multi-party approval + dummy digest (**NO ROOT**) |
 | `OPS_READINESS.md` | Single status board of remaining human gates before OPEN |
 | `OPEN_GATE_CHECKLIST.md` | Master go/no-go before replacing bounty draft with OPEN |
+
+**Gate freeze summary:** `STATUS.md`.
 
 **Next actions for the pilot team (human only):**
 

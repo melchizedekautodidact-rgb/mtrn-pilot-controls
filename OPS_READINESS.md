@@ -4,6 +4,8 @@
 
 **Master go/no-go before OPEN:** `OPEN_GATE_CHECKLIST.md` (do not mark OPEN while pool=0 or multisig UNVERIFIED).
 
+**Gate freeze summary:** `STATUS.md` (done vs human-only; bounty CLOSED).
+
 **Current snapshot facts (2026-10-07):**
 
 | Fact | Value |
@@ -44,6 +46,7 @@ Testnet MTRN has **no assumed monetary value**. Documentation only — no on-cha
 
 ## Related
 
+- Gate freeze: `STATUS.md`
 - OPEN gate checklist: `OPEN_GATE_CHECKLIST.md`
 - Preflight detail: `EPOCH_0_PREFLIGHT.md`
 - Dry-run pack: `PUBLISHER_DRY_RUN.md`
