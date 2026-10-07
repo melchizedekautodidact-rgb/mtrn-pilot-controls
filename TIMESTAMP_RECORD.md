@@ -112,3 +112,17 @@ ots upgrade stamp_finney_calendar_eternitywall_com.ots
 **Status:** still **pending** (calendar receipt / `PendingAttestation` only; **not** Bitcoin-anchored). Proof file unchanged (291 bytes). Digest still `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051`.
 
 Alice-path proofs remain Bitcoin-anchored at height **970307** (tx `3bacccc1…5c7d`). timestamps.org optional; DNS not rechecked in this pass.
+
+## Finney OTS upgrade retry (2026-10-07T10:14:11Z)
+
+**ots CLI:** `/workspace/.venv-ots` (`opentimestamps-client` v0.7.2).
+
+```
+ots upgrade stamp_finney_calendar_eternitywall_com.ots
+→ Calendar https://finney.calendar.eternitywall.com: Pending confirmation in Bitcoin blockchain
+→ Failed! Timestamp not complete
+```
+
+**Status:** still **pending** (`PendingAttestation` only; **not** Bitcoin-anchored). Proof file unchanged (291 bytes). Digest still `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051`.
+
+Alice-path proofs remain Bitcoin-anchored at height **970307** (tx `3bacccc1…5c7d`).

@@ -56,3 +56,33 @@ Unchanged from prior snapshot: **UNVERIFIED**. No signer roster confirmed in thi
 
 - Token balance: ERC-20 `balanceOf(address)` (`0x70a08231`) via `eth_call` at finalized block.
 - Pool getters: `latestEpoch()`, `totalReserved()`, `rewardToken()`, `epochBudgets(uint64)`, `claimedAmounts(uint64)`, `merkleRoots(uint64)`.
+
+---
+
+## Recheck #2 (2026-10-07 ~10:14 UTC)
+
+**Nature:** Read-only public state recheck (`eth_call` only). No wallet, no transaction, no funding, no launch confirmation.
+
+| Field | Value |
+|-------|-------|
+| Finalized block | **11,862,230** |
+| Block hash | `0x02bcf960a98f47cfd30f104aedcd8b16b8616bc587418aacc1aa91190535c002` |
+| Block time (UTC) | 2026-10-07 09:56:36 |
+| Block time (America/Chicago) | 2026-10-07 04:56:36 CDT |
+| Read performed (UTC) | ~2026-10-07 10:14 |
+
+Confirming providers (matched at the same finalized block / values): **PublicNode** (`ethereum-sepolia-rpc.publicnode.com`, User-Agent set), **Tenderly** (`sepolia.gateway.tenderly.co`). MEW Cloudflare-blocked; Automata 1RPC usage-limited (not counted).
+
+| Item | Value |
+|------|-------|
+| Token `balanceOf(pool)` | **0 MTRN** (raw `0`) |
+| Contract `totalReserved()` | **0** |
+| Contract `latestEpoch()` | **1** |
+| `epochBudgets(1)` / `claimedAmounts(1)` | 1 MTRN / 1 MTRN |
+| `merkleRoots(1)` | `0xbabe10214231eb215f6e7815f7fb33b9a810b4d0aed874c8613a389ac7c44731` |
+| Epoch 0 budget / claimed / root | 0 / 0 / zero |
+| `rewardToken()` | matches token `0x240C…95bB` |
+
+**Delta vs recheck #1 (block 11,861,943):** Pool balance remains **0 MTRN**. `latestEpoch` remains **1**. No new reward funds. Absolute planning caps stay **0 / 0**. Bounty stays **CLOSED**.
+
+Explorer block: https://sepolia.etherscan.io/block/11862230
