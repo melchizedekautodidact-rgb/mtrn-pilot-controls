@@ -9,7 +9,7 @@
 | Fact | Value |
 |------|-------|
 | Bounty | **CLOSED** |
-| Claim pool | **0 MTRN** |
+| Claim pool | **0 MTRN** (recheck block 11,861,943; see `CHAIN_SNAPSHOT_RECHECK_2026-10-07.md`) |
 | Multisig | **UNVERIFIED** |
 | Token | `0x240Ca008d81CFDF17dA8B5328A9C446cDf5995bB` |
 | Pool | `0x0D03686E217fC7067f0Ae180eCEcc55c9D1FE059` |
@@ -21,6 +21,7 @@ Docs only. No on-chain txs from this pack. Testnet MTRN has **no assumed monetar
 
 - [x] Controls Package hashed — `MTRN_Pilot_Controls_Package.sha256` / SHA-256 above (`EPOCH_0_PREFLIGHT.md`, `TIMESTAMP_RECORD.md`)
 - [x] OpenTimestamps calendar receipts submitted — `MTRN_Pilot_Controls_Package.md.ots` + companion `stamp_*.ots` (`TIMESTAMP_RECORD.md`)
+- [x] OTS upgrade (alice-path) to Bitcoin block **970307** — finney still pending (`TIMESTAMP_RECORD.md`)
 - [x] Public GitHub publish — https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls (`TIMESTAMP_RECORD.md`)
 - [x] Acceptance checklist published — `01_Acceptance_Checklist.md`
 - [x] Public tally seed ready — `PUBLIC_TALLY.md` (bounty still CLOSED; pool 0)
@@ -47,7 +48,8 @@ Docs only. No on-chain txs from this pack. Testnet MTRN has **no assumed monetar
 
 ## Optional (does not unblock OPEN by itself)
 
-- [ ] timestamps.org reachable and stamp recorded — see `TIMESTAMP_RECORD.md` (OTS calendars already submitted; Bitcoin aggregation may still be pending)
+- [x] OpenTimestamps Bitcoin anchor (alice-path proofs) — `BitcoinBlockHeaderAttestation(970307)` in `TIMESTAMP_RECORD.md` / upgraded `.ots`
+- [ ] timestamps.org reachable and stamp recorded — see `TIMESTAMP_RECORD.md` (DNS still fails; optional; finney calendar still pending)
 
 ## Still forbidden until OPEN gates pass
 
@@ -70,3 +72,4 @@ Docs only. No on-chain txs from this pack. Testnet MTRN has **no assumed monetar
 | Bounty draft (CLOSED) | `BOUNTY_ANNOUNCEMENT_DRAFT.md` |
 | Timestamp / OTS | `TIMESTAMP_RECORD.md` |
 | Snapshot | `CHAIN_SNAPSHOT_2026-10-07.md` |
+| Recheck | `CHAIN_SNAPSHOT_RECHECK_2026-10-07.md` |

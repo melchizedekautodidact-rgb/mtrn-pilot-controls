@@ -1,6 +1,6 @@
 # Epoch 0 hard caps (planning) — status from chain snapshot
 
-**Status:** Absolute **claim-pool** pre-fund is **0 MTRN** at Sepolia block 11,861,528. No new reward round can be funded from the active pool until tokens are transferred into it. See `CHAIN_SNAPSHOT_2026-10-07.md`.
+**Status:** Absolute **claim-pool** pre-fund is **0 MTRN** at Sepolia finalized block **11,861,943** (recheck; prior 11,861,528). No new reward round can be funded from the active pool until tokens are transferred into it. See `CHAIN_SNAPSHOT_RECHECK_2026-10-07.md` and `CHAIN_SNAPSHOT_2026-10-07.md`.
 
 **Rules from Controls Package v1.0:** Planning epoch budget ≤ 5% of pre-funded **claim-pool** balance; single beneficiary ≤ 15% of that epoch budget; max leaves = 33.
 

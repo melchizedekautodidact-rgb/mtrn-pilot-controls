@@ -8,7 +8,7 @@
 
 | Fact | Value |
 |------|-------|
-| Claim pool | **0 MTRN** |
+| Claim pool | **0 MTRN** (recheck block 11,861,943) |
 | Multisig | **UNVERIFIED** |
 | Bounty | **CLOSED** |
 | On-chain `latestEpoch` | **1** (next publishable after funding = **2**) |
@@ -23,7 +23,7 @@ Testnet MTRN has **no assumed monetary value**. Documentation only — no on-cha
 - [ ] **Fund claim pool** — complete `CLAIM_POOL_FUNDING_CHECKLIST.md`, then **republish** absolute caps in `EPOCH_0_CAPS.md` from the non-zero pool balance (budget ≤ 5% of pool; beneficiary ≤ 15% of budget).
 - [ ] **Verify multisig** — complete `PUBLISHER_KEY_MULTISIG.md` (status remains **UNVERIFIED** until humans fill the verification record).
 - [ ] **Complete publisher dry-run** — complete `PUBLISHER_DRY_RUN.md` (≥2 of 3 labeled A/B/C approve a *dummy* digest; public note; **NO ROOT** / never call `publishEpoch`).
-- [ ] **Optional:** timestamps.org when DNS works — see `TIMESTAMP_RECORD.md`. OpenTimestamps calendars already submitted.
+- [ ] **Optional:** timestamps.org when DNS works — see `TIMESTAMP_RECORD.md` (still unresolved). Alice-path OTS proofs are **Bitcoin-anchored** (block 970307); finney still pending.
 - [ ] **Only then:** replace `BOUNTY_ANNOUNCEMENT_DRAFT.md` with an OPEN notice (absolute caps, deadline, submission channel). Until then the bounty stays **CLOSED**.
 
 ## Already done (not blocking OPEN by themselves)
@@ -32,6 +32,8 @@ Testnet MTRN has **no assumed monetary value**. Documentation only — no on-cha
 - [x] Acceptance checklist published (`01_Acceptance_Checklist.md`)
 - [x] Public tally seed (`PUBLIC_TALLY.md`)
 - [x] Chain snapshot recorded (`CHAIN_SNAPSHOT_2026-10-07.md`)
+- [x] Chain recheck — pool still 0 (`CHAIN_SNAPSHOT_RECHECK_2026-10-07.md`)
+- [x] OTS upgrade — alice-path Bitcoin-anchored (`TIMESTAMP_RECORD.md`)
 
 ## Still forbidden until every required gate above is checked
 

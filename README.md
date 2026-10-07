@@ -16,6 +16,7 @@ This directory contains every operational recommendation from the independent re
 | `EPOCH_0_CAPS.md` | Absolute Epoch 0 budget / beneficiary caps |
 | `BOUNTY_ANNOUNCEMENT_DRAFT.md` | Public bounty text (**NOT OPEN**) |
 | `CHAIN_SNAPSHOT_2026-10-07.md` | Sepolia public state snapshot (pool 0 MTRN) |
+| `CHAIN_SNAPSHOT_RECHECK_2026-10-07.md` | Sepolia read-only recheck (pool still 0 MTRN; block 11,861,943) |
 | `EPOCH_0_PREFLIGHT.md` | Gate checklist before opening the bounty |
 | `PUBLISHER_DRY_RUN.md` | Dry-run: dummy multi-party approval + dummy digest (**NO ROOT**) |
 | `OPS_READINESS.md` | Single status board of remaining human gates before OPEN |
@@ -23,7 +24,7 @@ This directory contains every operational recommendation from the independent re
 
 **Next actions for the pilot team (human only):**
 
-1. ~~Hash + OpenTimestamps + GitHub publish~~ — done. SHA-256: `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051`. See `TIMESTAMP_RECORD.md` and `MTRN_Pilot_Controls_Package.md.ots`. (timestamps.org DNS still fails from some hosts; OTS calendars are the public timestamp channel.)
+1. ~~Hash + OpenTimestamps + GitHub publish~~ — done. SHA-256: `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051`. See `TIMESTAMP_RECORD.md` and `MTRN_Pilot_Controls_Package.md.ots`. Alice-path OTS proofs upgraded to **Bitcoin block 970307**; finney still pending. timestamps.org DNS still fails; OTS calendars remain the public timestamp channel. Sepolia pool recheck: still **0 MTRN** at block 11,861,943 (`CHAIN_SNAPSHOT_RECHECK_2026-10-07.md`).
 2. **(a)** Fund the active claim pool on Sepolia per `CLAIM_POOL_FUNDING_CHECKLIST.md` (never treat treasury as pool pre-fund).
 3. **(b)** Verify and fill multi-party publisher control per `PUBLISHER_KEY_MULTISIG.md` (status remains UNVERIFIED until humans complete it).
 4. **(c)** Republish absolute caps in `EPOCH_0_CAPS.md` from the non-zero claim-pool balance (budget ≤ 5% of pool; beneficiary ≤ 15% of budget).
