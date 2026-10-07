@@ -63,3 +63,38 @@ ots verify MTRN_Pilot_Controls_Package.md.ots
 **`ots verify`:** local Bitcoin node not available in this environment (no `~/.bitcoin` cookie); upgrade path already embeds the Bitcoin block-header attestation for the alice-family proofs.
 
 **timestamps.org recheck (same UTC):** DNS still fails (`gaierror` / temporary failure in name resolution for `timestamps.org` and `ots.timestamps.org`). Leave timestamps.org optional; OpenTimestamps calendars remain the public timestamp channel. Alice-path proofs are now Bitcoin-anchored; finney path remains pending.
+
+## OTS verify + Finney upgrade retry (2026-10-07T09:25:07Z)
+
+**ots CLI:** `/workspace/.venv-ots` (`opentimestamps-client` v0.7.2).
+
+### `ots verify` (Bitcoin-anchored proofs)
+
+All three proofs were verified against target file `MTRN_Pilot_Controls_Package.md` (`-f`). File hash matched expected digest `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051`.
+
+| Proof file | `ots verify` result |
+|------------|---------------------|
+| `MTRN_Pilot_Controls_Package.md.ots` | Digest OK; **exit 1** — no local Bitcoin node (`~/.bitcoin/.cookie` missing; `bitcoin.conf` absent). Attestation present per `ots info`: `BitcoinBlockHeaderAttestation(970307)`, merkle root `a97d0823e10d29c6992ec8f896f942d4c69e5a16388d405641253f6867091b0e`, tx `3bacccc16f0dbc1bc94570fb749f4abe9ee1d64b35f41779848a60871fb65c7d`. |
+| `stamp_alice_btc_calendar_opentimestamps_org.ots` | Same: digest OK; exit 1 (no Bitcoin node); same height **970307** / same merkle root / same tx. |
+| `stamp_a_pool_opentimestamps_org.ots` | Same: digest OK; exit 1 (no Bitcoin node); same height **970307** / same merkle root / same tx. |
+
+**Representative verify stderr (all three):**
+```
+Could not connect to Bitcoin node: Cookie file unusable ([Errno 2] No such file or directory: '/home/box/.bitcoin/.cookie') and rpcpassword not specified in the configuration file: '/home/box/.bitcoin/bitcoin.conf'
+```
+
+**Independent block-header cross-check (Blockstream API, not a substitute for local-node `ots verify`):** Bitcoin block height **970307** hash `00000000000000000001a7945b5a2467dbcc69e2d95d7f8086f889fdd0d715b8`; reported merkle root **matches** `a97d0823e10d29c6992ec8f896f942d4c69e5a16388d405641253f6867091b0e`; tx `3bacccc1…5c7d` confirmed in that block (`block_time` 1791357890).
+
+### Finney calendar upgrade
+
+```
+ots upgrade stamp_finney_calendar_eternitywall_com.ots
+→ Calendar https://finney.calendar.eternitywall.com: Pending confirmation in Bitcoin blockchain
+→ Failed! Timestamp not complete
+```
+
+**Status:** still **pending** (calendar receipt only; not Bitcoin-anchored). Proof file unchanged (291 bytes).
+
+### timestamps.org
+
+`getent hosts timestamps.org` / `ots.timestamps.org`: no A/AAAA (still down / unresolved). Leave optional; OpenTimestamps calendars remain the public timestamp channel.
