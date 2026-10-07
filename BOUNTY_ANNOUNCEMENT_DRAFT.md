@@ -2,6 +2,8 @@
 
 **Status: CLOSED.** This is a draft for review. Do not solicit work or publish roots until Epoch 0 gates in `EPOCH_0_PREFLIGHT.md` are all green.
 
+**Blocking gates still open:** (1) fund the active claim pool per `CLAIM_POOL_FUNDING_CHECKLIST.md`; (2) verify multi-party publisher control per `PUBLISHER_KEY_MULTISIG.md` (currently **UNVERIFIED**); (3) republish non-zero absolute caps in `EPOCH_0_CAPS.md` from the funded pool balance. Hash + OTS + GitHub and public tally seed are already done.
+
 ## Headline (when opened)
 
 Testnet-only bounty: source-check **33 d-block cohesive-energy datapoints** for the MTRN WorkEpochClaims pilot on **Sepolia**.
@@ -15,7 +17,7 @@ Testnet-only bounty: source-check **33 d-block cohesive-energy datapoints** for 
 ## What this is not
 
 - **Not** a promise of real-world money. Absent an external paying sponsor, rewards are **testnet MTRN only** with **no assumed monetary value**.
-- **Not** open until the controls package hash, multi-party publisher control, and Epoch 0 caps are published.
+- **Not** open until claim-pool funding, multi-party publisher verification, and Epoch 0 caps from a non-zero pool balance are complete (see gates above).
 
 ## Acceptance (summary)
 
@@ -41,6 +43,9 @@ Full checklist: `01_Acceptance_Checklist.md`. Every datapoint needs citation + D
 - Repo: https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls
 - Master SHA-256: `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051`
 - OpenTimestamps proof: `MTRN_Pilot_Controls_Package.md.ots`
+- Public tally seed: `PUBLIC_TALLY.md`
+- Funding checklist: `CLAIM_POOL_FUNDING_CHECKLIST.md`
+- Multisig verification: `PUBLISHER_KEY_MULTISIG.md`
 
 Addresses and snapshot: `CHAIN_SNAPSHOT_2026-10-07.md`.
 

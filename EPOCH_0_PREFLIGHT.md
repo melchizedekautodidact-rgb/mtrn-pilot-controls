@@ -1,6 +1,6 @@
 # Epoch 0 Preflight
 
-**Status:** Controls package hashed and on GitHub. Claim pool pre-fund is **0 MTRN**; multisig **unverified**. Bounty stays closed.
+**Status:** Controls package hashed, OpenTimestamps calendars stamped, and on GitHub. Public tally seed published. Claim pool pre-fund is **0 MTRN**; multisig **unverified**. Bounty stays closed.
 
 ## Package integrity
 
@@ -27,12 +27,12 @@ Publish this hash (or the whole package) on a public, timestamped channel before
 ## Human gates (must all pass before opening the 33-datapoint bounty)
 
 - [x] Controls Package hash submitted to public OpenTimestamps calendars
-- [x] Controls Package published on public GitHub: https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls (commit `b5e7bff`) (2026-10-07T07:05:15Z). See `TIMESTAMP_RECORD.md` and `MTRN_Pilot_Controls_Package.md.ots`. Note: timestamps.org DNS currently refuses queries; OTS calendars used as the public timestamp channel.
-- [ ] Publisher key is multi-party (min 2-of-3). **UNVERIFIED** as of 2026-10-07 snapshot. Single-key = stop
-- [ ] Epoch budget published (≤ 5% of **claim-pool** pre-fund): **0 MTRN** at snapshot (pool empty; cannot open)
+- [x] Controls Package published on public GitHub: https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls (commit `b5e7bff`) (2026-10-07T07:05:15Z). See `TIMESTAMP_RECORD.md` and `MTRN_Pilot_Controls_Package.md.ots`. Note: timestamps.org DNS currently refuses queries; OTS calendars remain the public timestamp channel.
+- [ ] Publisher key is multi-party (min 2-of-3). **UNVERIFIED** as of 2026-10-07 snapshot. Single-key = stop. See verification procedure in `PUBLISHER_KEY_MULTISIG.md`.
+- [ ] Epoch budget published (≤ 5% of **claim-pool** pre-fund): **0 MTRN** at snapshot (pool empty; cannot open). Fund per `CLAIM_POOL_FUNDING_CHECKLIST.md`, then republish `EPOCH_0_CAPS.md`.
 - [ ] Single-beneficiary cap published (≤ 15% of epoch budget): **0 MTRN** at snapshot
-- [ ] Acceptance checklist published publicly
-- [ ] Public tally page/file ready (see `05_Public_Tally_Template.md`)
+- [x] Acceptance checklist published publicly (`01_Acceptance_Checklist.md` in this public repo)
+- [x] Public tally page/file ready (`PUBLIC_TALLY.md`)
 
 ## Suggested Epoch 0 numbers (fill absolute values once balance is known)
 
@@ -63,6 +63,8 @@ Publish this hash (or the whole package) on a public, timestamped channel before
 | Gate | File |
 |------|------|
 | Multi-party publisher | `PUBLISHER_KEY_MULTISIG.md` |
+| Claim pool funding (human) | `CLAIM_POOL_FUNDING_CHECKLIST.md` |
 | Epoch 0 absolute caps | `EPOCH_0_CAPS.md` |
+| Public tally (live seed) | `PUBLIC_TALLY.md` |
 | Bounty text (still closed) | `BOUNTY_ANNOUNCEMENT_DRAFT.md` |
 | Sepolia snapshot | `CHAIN_SNAPSHOT_2026-10-07.md` |
