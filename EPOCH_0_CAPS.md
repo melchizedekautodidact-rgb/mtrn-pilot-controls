@@ -1,34 +1,33 @@
-# Epoch 0 hard caps (to publish)
+# Epoch 0 hard caps (planning) — status from chain snapshot
 
-**Status:** DRAFT numbers until pre-funded balance is filled and this file is committed as the published caps.  
-**Rules from Controls Package v1.0:** Epoch 0 budget ≤ 5% of pre-funded balance; single beneficiary ≤ 15% of epoch budget; max leaves = 33.
+**Status:** Absolute **claim-pool** pre-fund is **0 MTRN** at Sepolia block 11,861,528. No new reward round can be funded from the active pool until tokens are transferred into it. See `CHAIN_SNAPSHOT_2026-10-07.md`.
 
-## Absolute caps (fill balance, then compute)
+**Rules from Controls Package v1.0:** Planning epoch budget ≤ 5% of pre-funded **claim-pool** balance; single beneficiary ≤ 15% of that epoch budget; max leaves = 33.
 
-| Control | Rule | Absolute |
-|---------|------|----------|
-| Pre-funded balance | On-chain / treasury reading | _____ MTRN |
-| Epoch 0 total budget | ≤ 5% of pre-funded | _____ MTRN |
-| Single-beneficiary cap | ≤ 15% of Epoch 0 budget | _____ MTRN |
-| Maximum leaves | Exactly 33 | 33 |
+## Absolute caps (claim pool)
 
-### Worked example (replace with real balance)
+| Control | Rule | Absolute (snapshot) |
+|---------|------|---------------------|
+| Pre-funded balance (active WorkEpochClaims) | On-chain pool | **0 MTRN** |
+| Planning epoch budget | ≤ 5% of pre-funded | **0 MTRN** |
+| Single-beneficiary cap | ≤ 15% of epoch budget | **0 MTRN** |
+| Maximum leaves | Exactly 33 | 33 (not open) |
 
-If pre-funded balance = **B** MTRN:
+Treasury holds 1,000,000,000 MTRN but that is **not** a funded reward allocation in the claim pool.
 
-- Epoch 0 budget ≤ `0.05 × B`
-- Single beneficiary ≤ `0.15 × (Epoch 0 budget)` ≤ `0.0075 × B`
+## Naming note
 
-## Public tally seed (Epoch 0)
+Draft “Epoch 0” is a planning label. On-chain `latestEpoch` is **1** (budget/claimed 1/1). Next publishable epoch index would be **2** if/when the pool is funded.
 
-Copy into the live tally once caps are published:
+## Public tally seed
 
 ```
 Epoch | Published Root | Total Committed | Remaining Balance | % of Pre-fund Used | Notes
 ------|----------------|-----------------|-------------------|--------------------|------
-0     | (none yet)     | 0 MTRN          | B MTRN           | 0 %                | Caps published; bounty not open
+plan  | (none)         | 0 MTRN          | 0 MTRN           | n/a                | Pool unfunded; bounty closed
+1     | (on-chain)     | 1 MTRN claimed  | 0 MTRN           | n/a                | Historical; do not reuse
 ```
 
 ## Still closed
 
-Do not open the 33-datapoint bounty until this file has real absolute numbers **and** `PUBLISHER_KEY_MULTISIG.md` is confirmed.
+Do not open the 33-datapoint bounty until the claim pool is funded, absolute caps are republished from a non-zero balance, and `PUBLISHER_KEY_MULTISIG.md` is actually confirmed (currently unverified).

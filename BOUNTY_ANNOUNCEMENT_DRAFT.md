@@ -23,8 +23,9 @@ Full checklist: `01_Acceptance_Checklist.md`. Every datapoint needs citation + D
 
 ## Caps (placeholders — replace from `EPOCH_0_CAPS.md`)
 
-- Epoch 0 budget: **TBD** MTRN (≤ 5% of pre-funded balance)
-- Single beneficiary: **TBD** MTRN (≤ 15% of Epoch 0 budget)
+- Claim-pool pre-fund (snapshot): **0 MTRN** — no new round available until funded
+- Planning budget / single-beneficiary caps: **0 / 0 MTRN** until pool is funded
+- On-chain `latestEpoch`: **1** (next index would be **2**); draft “Epoch 0” is planning-only
 - Leaves: exactly **33**
 
 ## Evidence / process
@@ -40,6 +41,8 @@ Full checklist: `01_Acceptance_Checklist.md`. Every datapoint needs citation + D
 - Repo: https://github.com/melchizedekautodidact-rgb/mtrn-pilot-controls
 - Master SHA-256: `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051`
 - OpenTimestamps proof: `MTRN_Pilot_Controls_Package.md.ots`
+
+Addresses and snapshot: `CHAIN_SNAPSHOT_2026-10-07.md`.
 
 ## How to watch for OPEN
 
