@@ -126,3 +126,7 @@ ots upgrade stamp_finney_calendar_eternitywall_com.ots
 **Status:** still **pending** (`PendingAttestation` only; **not** Bitcoin-anchored). Proof file unchanged (291 bytes). Digest still `fb980fcf83b4fa368435f19876fb84b6ea7388d3559bbec2781070cf27d5e051`.
 
 Alice-path proofs remain Bitcoin-anchored at height **970307** (tx `3bacccc1…5c7d`).
+
+## Finney upgrade (2026-10-09)
+
+`stamp_finney_calendar_eternitywall_com.ots` is now Bitcoin-anchored at block **970333** (tx `8119131ac6c5b9311162532046ad772325066c6e2d7b6783ff7b836050ff64d5`). Alice-path proofs remain anchored at 970307.
